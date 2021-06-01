@@ -1,0 +1,17 @@
+/**index.wxss**/
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.btn {
+  background-color: pink;
+  width: 150px;
+  text-align: center;
+  padding: 20rpx 0;
+  margin: 10rpx 10rpx;
+  color: #fff;
+}

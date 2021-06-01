@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view>
+  <calendar
+    defaultDate="{{defaultDate}}"
+    isDataChange="{{isDataChange}}"
+    daysData="{{daysData}}"
+    bind:select="select"
+    bind:formatter="formatter">
+  </calendar>
+
+  <view class="btn-box">
+    <view class="btn" bindtap="changeDate">改日期</view>
+    <view class="btn" bindtap="changeData">改数据</view>
+  </view>
+</view>

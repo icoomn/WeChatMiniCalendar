@@ -1,0 +1,26 @@
+<view class="calendar-box">
+  <view class="head-box">
+    <view class="title-box">{{title}}</view>
+    <view class="week-box">
+      <view class="week-item">日</view>
+      <view class="week-item">一</view>
+      <view class="week-item">二</view>
+      <view class="week-item">三</view>
+      <view class="week-item">四</view>
+      <view class="week-item">五</view>
+      <view class="week-item">六</view>
+    </view>
+  </view>
+  <view class="date-box">
+    <view
+      bindtap="clickItem"
+      data-date="{{day.date}}"
+      class="date-item {{currentDate == day.date ? 'active' : ''}}"
+      wx:for="{{daysArray}}" wx:for-item="day"
+      wx:key="index">
+      <view class="top-text" wx:if="{{day.topText}}">{{day.topText}}</view>
+      {{day.date}}
+      <view class="bottom-text" wx:if="{{day.bottomText}}">{{day.bottomText}}</view>
+    </view>
+  </view>
+</view>

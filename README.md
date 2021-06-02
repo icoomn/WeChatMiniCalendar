@@ -4,7 +4,7 @@
 ## 一、效果
 <br/>
 
-![图片alt](https://raw.githubusercontent.com/smshen/MarkdownPhotos/master/Res/test.jpg)
+![图片alt](https://github.com/imxiaoer/WeChatMiniCalendar/blob/main/screenshot/picture1.gif)
 
 <br/><br/>
 
@@ -68,4 +68,4 @@ formatter (res) {
 ## 五、项目中的实际使用效果
 <br/>
 
-![图片alt](https://raw.githubusercontent.com/smshen/MarkdownPhotos/master/Res/test.jpg)
+![图片alt](https://github.com/imxiaoer/WeChatMiniCalendar/blob/main/screenshot/picture2.gif)

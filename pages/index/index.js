@@ -16,25 +16,13 @@ Page({
         show: true
       },
       {
-        date: '29',
-        show: true
-      },
-      {
         date: '13',
         show: true
       },
       {
         date: '24',
         show: true
-      },
-      {
-        date: '5',
-        show: true
-      },
-      {
-        date: '16',
-        show: true
-      },
+      }
     ]
     this.setData({
       defaultDate: '2021/3/2',
@@ -55,14 +43,6 @@ Page({
   changeData () {
     let dt = [
       {
-        date: '10',
-        show: true
-      },
-      {
-        date: '20',
-        show: true
-      },
-      {
         date: '11',
         show: true
       },
@@ -71,21 +51,22 @@ Page({
         show: true
       },
       {
-        date: '13',
+        date: '19',
         show: true
       },
       {
-        date: '16',
+        date: '22',
         show: true
-      },
+      }
     ]
     this.setData({
       daysList: dt,
-      isDataChange: !this.data.isDataChange
+      isDataChange: !this.data.isDataChange // 用户数据改变了
     })
   },
   formatter (res) {
-    console.log(123);
+    // res.detail 为日历组件传出的日期数据数组
+
     let da = res.detail;
     let dl = this.data.daysList;
 
@@ -100,6 +81,7 @@ Page({
       }
     }
 
+    // 将处理后的日期数据再传入日历组件
     this.setData({ daysData: da });
   }
 })

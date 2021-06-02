@@ -4,6 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    // 传入的日期，考虑到兼容性问题，最好传斜杠格式的日期字符串，如： 2021/2/12
     defaultDate: {
       type: String,
       observer () {
@@ -12,6 +13,7 @@ Component({
         this.triggerEvent('formatter', this.data.daysArray);
       }
     },
+    // 用户数据是否改变
     isDataChange: {
       type: Boolean,
       value: false,
@@ -19,6 +21,7 @@ Component({
         this.triggerEvent('formatter', this.data.daysArray);
       }
     },
+    // 传入的日历数据
     daysData: {
       type: Array,
       observer (newVal) {
@@ -41,8 +44,8 @@ Component({
     lastDayWeek: '',  // 当前月最后一天星期几
     daysCount: 0,  // 总天数
     daysArray: [], // 日历中天数数组
-    title: '',
-    currentDate: '0'
+    title: '', // 日历标题
+    currentDate: '0' // 当前选中的天
   },
 
   /**
